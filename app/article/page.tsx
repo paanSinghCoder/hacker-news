@@ -5,7 +5,10 @@ import queryString from "query-string";
 const Article = () => {
   const [time, setTime] = useState("");
   const [about, setAbout] = useState("");
-  const parsed = queryString.parse(window.location.search);
+  const parsed =
+    typeof window !== "undefined"
+      ? queryString.parse(window.location.search)
+      : "";
 
   useEffect(() => {
     try {
