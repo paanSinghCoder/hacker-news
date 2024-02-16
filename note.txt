@@ -1,0 +1,39 @@
+page 1: name, password, phone(US validation), 
+zip code(5 digit validate), with submit and clear buttons
+
+page2: If all validates, post the data the API and hacker 
+news handle and displays the confirmation message.
+
+Signup form with the following fields. 
+
+Name
+
+Password
+
+Phone Number ( US Phone Number to be validated )
+
+ZipCode - 5 digit number to be valid
+
+Signup and Clear Buttons
+
+Phone number format :
+
+(+1) 408 910 6124
++1 409 344 1234
++1 (419) 344 2343
+408 555 1345
+(408) 123-1244
+
+408.123.1234
+
+1: check the size of the input
+2: check if the country code - either +1 or nothing
+3: . and paranthesis are valid
+
+
+
+Once the user signs up. 
+
+Hacker News Search & Display
+
+have a search box that take a user name and uses the API to get the post
