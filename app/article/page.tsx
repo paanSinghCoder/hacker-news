@@ -5,7 +5,7 @@ import queryString from "query-string";
 const Article = () => {
   const [time, setTime] = useState("");
   const [about, setAbout] = useState("");
-  const parsed =
+  const parsed: any =
     typeof window !== "undefined"
       ? queryString.parse(window.location.search)
       : "";
@@ -32,7 +32,7 @@ const Article = () => {
   return (
     <>
       <div>Created at: {new Date(time).toString()}</div>
-      <div>Created by: {parsed.name}</div>
+      <div>Created by: {parsed?.name}</div>
       <div>Created by: {about}</div>
     </>
   );
